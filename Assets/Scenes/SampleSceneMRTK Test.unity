@@ -1122,6 +1122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456266240}
+  - component: {fileID: 456266241}
   m_Layer: 0
   m_Name: TPS
   m_TagString: Untagged
@@ -1146,6 +1147,24 @@ Transform:
   m_Father: {fileID: 1861708498}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456266241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456266239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e83577f85603e34689a175a6e389832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedObject: {fileID: 456266240}
+  trackedObjectMesh: {fileID: 2278539039704420682}
+  tipOffset: {x: 0, y: -0.15, z: 0.016}
+  rayLength: 0.025
+  defaultMaterial: {fileID: 2100000, guid: 8333b500a32e44c43a0d5d5a094997db, type: 2}
+  triggeredMaterial: {fileID: -6478536213147159724, guid: eecefb9d4367d6940b0e39a26187d0f5, type: 3}
 --- !u!1 &499464154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1452,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 670086569}
-  - component: {fileID: 670086570}
   m_Layer: 31
   m_Name: TipOffsetTest
   m_TagString: Untagged
@@ -1456,20 +1474,6 @@ Transform:
   m_Father: {fileID: 462861764177955988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &670086570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670086568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e83577f85603e34689a175a6e389832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackedObject: {fileID: 670086569}
-  rayLength: 0.0025
 --- !u!1 &677526676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3885370230430447826, guid: 36ff76a9e7929f342915274725573e00, type: 3}
